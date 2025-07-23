@@ -3,7 +3,7 @@
     <div class="absolute h-full w-full bg-black bg-opacity-50"></div>
 
     @auth
-        <div class="relative flex h-full w-full max-w-7xl items-center justify-center pr-10 md:justify-between">
+        <div class="relative flex h-full w-full max-w-7xl bg-red-400 items-center justify-center pr-10 md:justify-between">
             <div class="flex items-center gap-x-4">
                 <a href="{{ route('me.show') }}" class="ml-7">
                     <img class="drop-shadow transition duration-300 ease-in-out hover:scale-105"

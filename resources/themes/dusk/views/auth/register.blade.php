@@ -48,7 +48,7 @@
            <x-site-captchas />
 
             <div class="mt-4 grid grid-cols-2 gap-3">
-                <button type="submit" class="py-2 px-4 text-white bg-yellow-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Register</button>
+                <button type="submit" class="py-2 px-4 text-white bg-red-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Register</button>
 
                 <a href="{{ route('login') }}" class="w-full">
                     <button type="button" class="py-2 px-4 text-white bg-gray-700 border-2 border-gray-600 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Back to login</button>
