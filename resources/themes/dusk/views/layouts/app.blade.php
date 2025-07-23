@@ -41,8 +41,9 @@
                             </x-navigation.language-selector>
                         </div>
 
-                        <a href="{{ setting('discord_invitation_link') }}" target="_blank" class="transition duration-300 ease-in-out hover:text-gray-300">
-                            Discord
+                        <a href="{{ setting('discord_invitation_link') }}" target="_blank" class="flex transition duration-300 bg-[#7289da] py-2 px-4 rounded-lg ease-in-out hover:text-gray-300 ">
+                            <img class="size-1 object-contain mr-2 " src="/assets/images/icons/discord.png" alt="">
+                            <span class="font-semibold">Discord</span>
                         </a>
                     </div>
 
