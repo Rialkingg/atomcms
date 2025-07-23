@@ -10,7 +10,7 @@
 
            <div class="grid grid-cols-12 gap-3 mt-4">
                <div class="relative w-full overflow-hidden text-black col-span-12">
-                   <input id="username-input" type="text" placeholder="Enter your username" name="username" value="{{ old('username') }}" class="relative py-2 rounded-md w-full" required>
+                   <input id="username-input" type="text" placeholder="Nombre" name="username" value="{{ old('username') }}" class="relative py-2 rounded-md w-full" required>
                </div>
 
                <div class="relative w-full overflow-hidden text-black col-span-12">
@@ -18,7 +18,7 @@
                </div>
 
                <div class="col-span-12">
-                   <input type="password" placeholder="Enter your password" name="password" class="relative py-2 rounded-md text-black w-full" required>
+                   <input type="password" placeholder="Contraseña" name="password" class="relative py-2 rounded-md text-black w-full" required>
                </div>
 
                <div class="col-span-12">
@@ -48,7 +48,7 @@
            <x-site-captchas />
 
             <div class="mt-4 grid grid-cols-2 gap-3">
-                <button type="submit" class="py-2 px-4 text-white bg-red-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Register</button>
+                <button type="submit" class="py-2 px-4 text-white bg-yellow-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Register</button>
 
                 <a href="{{ route('login') }}" class="w-full">
                     <button type="button" class="py-2 px-4 text-white bg-gray-700 border-2 border-gray-600 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Back to login</button>

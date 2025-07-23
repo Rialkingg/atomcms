@@ -9,12 +9,12 @@
             @csrf
 
             <div class="relative w-full overflow-hidden text-black">
-                <input id="username-input" type="text" placeholder="Enter your username" name="username" class="relative py-2 rounded-md mt-3 w-full">
+                <input id="username-input" type="text" placeholder="Nombre" name="username" class="relative py-2 rounded-md mt-3 w-full">
 
                 <img id="user-avatar" class="absolute right-0 -top-4" src="{{ asset('/assets/images/dusk/ghost.png') }}" alt="">
             </div>
 
-            <input type="password" placeholder="Enter your password" name="password" class="relative py-2 rounded-md mt-3 text-black w-full">
+            <input type="password" placeholder="Contraseña" name="password" class="relative py-2 rounded-md mt-3 text-black w-full">
 
             <x-site-captchas />
 
