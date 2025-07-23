@@ -3,7 +3,10 @@
 
 
     <div class="col-span-12 md:col-span-6 bg-gray-900/50 rounded-xl flex flex-col py-6 px-8 text-white self-start">
-        <h2 class="text-2xl">{{ __('Create a new account') }}</h2>
+        <div class="flex">
+            <img class="size-6 object-contain mr-2" src="/assets/images/icons/heart.gif" alt="">
+            <h2 class="text-2xl font-semibold">{{ __('Registrate en Bubbu') }}</h2>
+        </div>
 
         <form action="{{ route('register') }}" method="POST">
             @csrf
@@ -14,7 +17,7 @@
                </div>
 
                <div class="relative w-full overflow-hidden text-black col-span-12">
-                   <input id="username-input" type="email" placeholder="Enter your e-mail" name="mail" value="{{ old('mail') }}" class="relative py-2 rounded-md w-full" required>
+                   <input id="username-input" type="email" placeholder="Email" name="mail" value="{{ old('mail') }}" class="relative py-2 rounded-md w-full" required>
                </div>
 
                <div class="col-span-12">
@@ -22,12 +25,12 @@
                </div>
 
                <div class="col-span-12">
-                   <input type="password" placeholder="Confirm your password" name="password_confirmation" class="relative py-2 rounded-md text-black w-full" required>
+                   <input type="password" placeholder="Contraseña" name="password_confirmation" class="relative py-2 rounded-md text-black w-full" required>
                </div>
 
                @if (setting('requires_beta_code'))
                    <div class="col-span-12">
-                       <input type="text" placeholder="Beta code" name="beta_code" class="relative py-2 rounded-md text-black w-full" required>
+                       <input type="text" placeholder="Código de la beta" name="beta_code" class="relative py-2 rounded-md text-black w-full" required>
                    </div>
                @endif
            </div>
@@ -37,7 +40,7 @@
                        class="mt-1 rounded ring-0 focus:ring-0">
 
                 <a href="{{ route('help-center.rules.index') }}" target="_blank"
-                   class="mt-1 text-sm font-semibold text-white hover:text-gray-900 hover:underline hover:text-gray-200">
+                   class="mt-1 text-sm font-semibold text-white hover:text-gray-300 hover:underline">
                     {{ __('I accept the :hotel terms & rules.', ['hotel' => setting('hotel_name')]) }}
                 </a>
             </div>
@@ -48,11 +51,11 @@
            <x-site-captchas />
 
             <div class="mt-4 grid grid-cols-2 gap-3">
-                <button type="submit" class="py-2 px-4 text-white bg-yellow-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Register</button>
-
                 <a href="{{ route('login') }}" class="w-full">
-                    <button type="button" class="py-2 px-4 text-white bg-gray-700 border-2 border-gray-600 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Back to login</button>
+                    <button type="button" class="py-2 px-4 text-white font-semibold bg-gray-700 border-2 border-gray-600 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Volver al login</button>
                 </a>
+
+                <button type="submit" class="py-2 px-4 text-white font-semibold bg-yellow-500 border-2 border-yellow-300 w-full rounded-md transition duration-300 ease-in-out hover:scale-[102%]">Registrarme</button>
             </div>
         </form>
     </div>
