@@ -102,7 +102,7 @@
                <div class="absolute bg-[#e9b124] w-6 h-6 -right-1 rotate-45 invisible lg:visible"></div>
                <img src="{{ asset('/assets/images/icons/online-friends.png') }}" alt="{{ __('Online Friends') }}"
                     class="mr-2 mb-1 inline-flex" style="max-width: 24px; max-height: 24px">
-               <span class="relative text-white h-100">{{ __('Online Friends') }}</span>
+               <span class="relative text-white h-100">{{ __('Amigos online') }}</span>
            </div>
 
            <div class="relative flex flex-1 items-center justify-center gap-2 pl-2 h-100 sm:justify-start">
